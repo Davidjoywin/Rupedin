@@ -1,0 +1,218 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html
+{
+  font-size: 62.5%;
+}
+
+#container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(./demo-img.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  position: fixed;
+  width: 90vw;
+  right: 0;
+  margin: 1rem;
+  margin-top: .8rem;
+  display: flex;
+  padding-top: .8rem;
+  padding-right: 1.5rem;
+  border-radius: 2rem;
+  background: #000;
+  align-content: center;
+  text-transform: uppercase;
+  justify-items: space-between;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  overflow: auto;
+}
+
+nav h1 {
+  background: #000;
+  padding: 1.5rem;
+  border-radius: 2rem;
+}
+
+nav h1 a{
+  color: #fff;
+  font-size: 150%;
+  text-decoration: none;
+}
+
+nav ul li{
+  position: relative;
+  list-style: none;
+  margin: 0 20px;
+}
+
+nav ul li::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background: #009688;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s
+}
+
+nav ul li:hover::after {
+  width: 100%;
+}
+
+nav ul li a{
+  color: #fff;
+  font-size: 120%;
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+}
+
+header h1{
+  font-size: 7rem;
+  margin-top: 8rem;
+}
+
+header p{
+  margin: 2rem auto;
+  font-size: 4rem;
+  line-height: 5rem;
+}
+
+button {
+  width: 200px;
+  padding: 1.5rem 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 2.5rem;
+  font-weight: bold;
+  position: relative;
+  border: 2px solid #009688;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+span {
+  background: #009688;
+  height: 100%;
+  width: 0;
+  border-radius: 2.5rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span{
+  width: 100%;
+}
+
+#main-container {
+  position: absolute;
+  top: 100vh;
+  width: 100%;
+  margin: 1.5rem;
+  padding: 3rem;
+  margin-bottom: 26rem;
+  color: #fff;
+  border-radius: 2rem;
+  background: rgb(0,0,0);
+  font-size: 5%;
+  opacity: .65
+}
+
+#area-and-activity ol ol{
+  margin-left: 5rem;
+  list-style-type: lower-roman;
+}
+
+footer {
+
+}
+
+#background, #mission,
+#corporate-status, #objectives,
+#target-group, #area-and-activity,
+#level-of-activity, #achievement {
+  height: auto;
+  margin: 1rem;
+  margin-top: 2rem;
+}
+
+#background, #mission,
+#corporate-status, #objectives,
+#target-group, #area-and-activity,
+#level-of-activity, #achievement h1{
+  font-size: 5rem;
+  line-height: 5rem;
+}
+
+#background, #mission,
+#corporate-status, #objectives,
+#target-group, #area-and-activity,
+#level-of-activity, #achievement,
+footer p{
+  font-size: 3rem;
+}
+
+#contact-us {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background: #000;
+}
+
+#contact-us h2{
+  font-size: 200%;
+  text-decoration: underline;
+}
+#contact-us p{
+  text-align: center;
+  line-height: 3rem;
+  font-size: 150%;
+}
+
+#contact-us p a{
+  text-decoration: none;
+  color: inherit;
+  font-size: 100%;
+}
+
+ion-icon{
+  transform: scale(4);
+  margin: 2rem;
+  color: white;
+}
+
+ion-icon:hover {
+  color: blue;
+}
+
+@media  screen and (max-width: 500px) {
+  header{
+    transform: scale(.8)
+  }
+}
