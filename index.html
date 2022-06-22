@@ -4,252 +4,427 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
   <title>Rupedin</title>
-
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+  <link rel="stylesheet" href="./output.css">
 
 </head>
 <body>
 
-  <div id="container">
+  <div id="container" class="">
 
-    <nav>
-      <h1><a href="#header-container">Rupedin</a></h1>
-      <ul>
-        <li><a href="#background">Background</a></li>
-        <li><a href="#mission">Mission</a></li>
-        <li><a href="#corporate-status">Corporate Status</a></li>
-        <li><a href="#objectives">Objectives</a></li>
-        <li><a href="#target-group">Target Groups</a></li>
-        <li><a href="#area-and-activity">Programme Area And Activities</a></li>
-        <li><a href="#level-of-activity">Level Of Organization Activity</a></li>
-        <li><a href="#achievement">Achievement</a></li>
-        <li><a href="#contact-us">contact us</a></li>
 
-      </ul>
+    <nav class="bg-white shadow dark:bg-gray-800 sticky top-0 overflow-x-auto">
+      <div class="container px-6 py-3 mx-auto md:flex">
+          <div class="flex items-center justify-between">
+              <div>
+                  <a class="text-2xl font-bold text-gray-800 transition-colors duration-200 transform dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300" href="#">Rupedin</a>
+              </div>
+              
+              <!-- Mobile menu button -->
+              <div class="flex md:hidden">
+                  <button type="button" id="arm-burger" class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400" aria-label="toggle menu">
+                      <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+                          <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
+                      </svg>
+                  </button>
+              </div>
+          </div>
+
+          <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+          <div id="menu" class="w-full md:flex md:items-center md:justify-between">
+              <div class="flex flex-col px-2 py-3 -mx-4 md:flex-row md:mx-0 md:py-0">
+                  <a href="#background" class="px-2 py-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded dark:text-gray-200 hover:bg-gray-900 hover:text-gray-100 md:mx-2">Background</a>
+                  <a href="#mission" class="px-2 py-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded dark:text-gray-200 hover:bg-gray-900 hover:text-gray-100 md:mx-2">Mission</a>
+                  <a href="#corporate-status" class="px-2 py-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded dark:text-gray-200 hover:bg-gray-900 hover:text-gray-100 md:mx-2">Corporate Status</a>
+                  <a href="#objective" class="px-2 py-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded dark:text-gray-200 hover:bg-gray-900 hover:text-gray-100 md:mx-2">Objectives</a>
+                  <a href="#target-groups" class="px-2 py-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded dark:text-gray-200 hover:bg-gray-900 hover:text-gray-100 md:mx-2">Target Groups</a>
+                  <a href="#programme-area-and-activity" class="px-2 py-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded dark:text-gray-200 hover:bg-gray-900 hover:text-gray-100 md:mx-2">Programme Area And Activities</a>
+                  <a href="#level-of-activity" class="px-2 py-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded dark:text-gray-200 hover:bg-gray-900 hover:text-gray-100 md:mx-2">Level Of Organization Activities</a>
+                  <a href="#achievements" class="px-2 py-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded dark:text-gray-200 hover:bg-gray-900 hover:text-gray-100 md:mx-2">Achievement</a>
+                  <a href="#contact-us" class="px-2 py-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded dark:text-gray-200 hover:bg-gray-900 hover:text-gray-100 md:mx-2">Contact Us</a>
+              </div>
+              
+          </div>
+      </div>
     </nav>
-  
-    <header id="header-container">
-      <h1>RUPEDIN</h1>
-      <p>Rural People Development Initiative</p>
-      <a href="#contact"><button type="button" href="#contact"><span></span>CONTACT US</button></a>
-    </header>
+
+
+    <div class="max-w-full overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+      <img class="object-cover w-auto h-64" src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Article">
+
+      <div class="p-6">
+          <div>
+              <span class="text-xs font-medium text-blue-600 uppercase dark:text-blue-400">Product</span>
+              <a href="#" class="block mt-2 text-2xl font-semibold text-gray-800 transition-colors duration-200 transform dark:text-white hover:text-gray-600 hover:underline">I Built A Successful Blog In One Year</a>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris egestas quam volutpat viverra. In pretium nec senectus erat. Et malesuada lobortis.</p>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris egestas quam volutpat viverra. In pretium nec senectus erat. Et malesuada lobortis.</p>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris egestas quam volutpat viverra. In pretium nec senectus erat. Et malesuada lobortis.</p>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris egestas quam volutpat viverra. In pretium nec senectus erat. Et malesuada lobortis.</p>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris egestas quam volutpat viverra. In pretium nec senectus erat. Et malesuada lobortis.</p>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris egestas quam volutpat viverra. In pretium nec senectus erat. Et malesuada lobortis.</p>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris egestas quam volutpat viverra. In pretium nec senectus erat. Et malesuada lobortis.</p>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris egestas quam volutpat viverra. In pretium nec senectus erat. Et malesuada lobortis.</p>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris egestas quam volutpat viverra. In pretium nec senectus erat. Et malesuada lobortis.</p>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris egestas quam volutpat viverra. In pretium nec senectus erat. Et malesuada lobortis.</p>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris egestas quam volutpat viverra. In pretium nec senectus erat. Et malesuada lobortis.</p>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris egestas quam volutpat viverra. In pretium nec senectus erat. Et malesuada lobortis.</p>
+          </div>
+
+          <div class="mt-4 m-3">
+              <div class="flex items-center">
+                  <div class="flex items-center">
+                      <img class="object-cover h-10 rounded-full" src="https://images.unsplash.com/photo-1586287011575-a23134f797f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=48&q=60" alt="Avatar">
+                      <a href="#" class="mx-2 font-semibold text-gray-700 dark:text-gray-200">Jone Doe</a>
+                  </div>
+                  <span class="mx-1 text-xs text-gray-600 dark:text-gray-300">21 SEP 2015</span>
+              </div>
+          </div>
+      </div>
+  </div>
     
-    <main id="main-container">
-      <div id="background">
-    
-        <h2>Background</h2>
-    
-        <p>
-          Rural Development Initiative is an independent, non-religious, non-political and
-          non-governmental organization that is out for the development of the poorest of 
-          the poor in Oke-Ogun and Nigeria at large. RUPEDIN was founded in 1997. It  was 
-          Rural Search Light Nigeria(RUSEL) but latter became Rural People Development Initiative during the CAC registration.
-        </p>
-    
-        <p>
-          Since her inception RUPEDIN affected many life positively thus making life better 
-          by improving the quality of life better by improving the quality of life the target groups. Over
-           2000 people enrolled and enjoying the services of RUPEDIN.
-        </p>
-    
-        <P>
-          RUPEDIN has received a resolving loan assistance from Community Development 
-          Foundation (CDI) Lagos, and lift Above Poverty (LAPO) Benin City. RUPEDIN is 
-          one of the beneficiaries of DFID/CBDD Genetic Training Programmes as well as 
-          Organizational Assessment and Development (OA/OD). IRED
-          Anglophone West Africa, Lagos also trained RUPEDIN staff and members Aug 2006, 
-          RUPEDIN was one of the beneficiaries of ASA methodology in micro-credit. We 
-          also participated in the Micro-Credit Summit Campaign on Integration of 
-          Health Education, HIV/AIDS into Micro Finance.
-        </P>
-    
-        <p>
-          Over three hundred groups have benefitted from our monthly and weekly credit 
+
+    <section class="bg-gray-100 dark:bg-gray-900 lg:py-12 lg:flex-col lg:flex lg:justify-center">
+      <div class="mx-6 bg-white dark:bg-gray-800 lg:content-center lg:mx-8 lg:flex lg:max-w-5xl lg:shadow-lg lg:rounded-lg">
+      <!--
+
+        <div class="lg:w-1/2">
+            <div class="h-64 bg-cover lg:rounded-lg lg:h-full" style="background-image:url('https://images.unsplash.com/photo-1593642532400-2682810df593?ixlib=rb-1.2.1&ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80')"></div>
+        </div>
+      -->  
+
+          <div class="max-w-xl px-6 py-12 lg:max-w-5xl lg:w-1/2" id="background">
+              <h2 class="text-2xl font-bold text-gray-800 dark:text-white md:text-3xl">Background</h2>
+              <p class="mt-4 text-gray-600 dark:text-gray-400">
+                Rural People Development Initiative is an independent, non-religious, non-political and
+                non-governmental organization that is out for the development of the poorest of 
+                the poor in Oke-Ogun and Nigeria at large. RUPEDIN was founded in 1997. It  was 
+                Rural Search Light Nigeria(RUSEL) but latter became Rural People Development Initiative during the CAC registration.
+              </p>
+              <p class="mt-4 text-gray-600 dark:text-gray-400">
+                Since her inception RUPEDIN affected many life positively thus making life better 
+                by improving the quality of life better by improving the quality of life the target groups. Over
+                2000 people enrolled and enjoying the services of RUPEDIN.
+              </p>
+              <p class="mt-4 text-gray-600 dark:text-gray-400">
+                RUPEDIN has received a resolving loan assistance from Community Development 
+                Foundation (CDI) Lagos, and lift Above Poverty (LAPO) Benin City. RUPEDIN is 
+                one of the beneficiaries of DFID/CBDD Genetic Training Programmes as well as 
+                Organizational Assessment and Development (OA/OD). IRED
+                Anglophone West Africa, Lagos also trained RUPEDIN staff and members Aug 2006, 
+                RUPEDIN was one of the beneficiaries of ASA methodology in micro-credit. We 
+                also participated in the Micro-Credit Summit Campaign on Integration of 
+                Health Education, HIV/AIDS into Micro Finance.
+              </p>
+              <p class="mt-4 text-gray-600 dark:text-gray-400">
+                Over three hundred groups have benefitted from our monthly and weekly credit 
           facilities while youth were trained to be computer literate and men women 
           were empowered with motorcycles, grinding engine and provision of fertilizers 
           to our farmer memebers.
-        </p>
-  
+              </p>
+          </div>
       </div>
-  
-      <div id="mission">
-        <h2>MISSION</h2>
-  
-        <p>
-          To create an enabling environment that will allow members, the less priviledged 
-          of the women / youths and the poorest of the poor in Oke-Ogun and Nigeria, to 
-          achieve healthy and improved living standard and sustain their developmental 
-          objectives.
-        </p>
+
+
+      <div class="container px-6 py-8 mx-auto" id="mission">
+        <div class="items-center lg:flex">
+            <div class="lg:w-1/2">
+              <h2 class="text-3xl font-bold text-gray-800 dark:text-gray-100">Mission</h2>
+
+              <p class="mt-4 text-gray-500 dark:text-gray-400 lg:max-w-md">
+                To create an enabling environment that will allow members, the less priviledged 
+                of the women / youths and the poorest of the poor in Oke-Ogun and Nigeria, to 
+                achieve healthy and improved living standard and sustain their developmental 
+                objectives.
+              </p>
+            </div>
+
+          <!--
+            <div class="mt-8 lg:mt-0 lg:w-1/2">
+                <div class="flex items-center justify-center lg:justify-end">
+                    <div class="max-w-lg">
+                        <img class="object-cover object-center w-full h-64 rounded-md shadow" src="https://images.unsplash.com/photo-1484399172022-72a90b12e3c1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="">
+                    </div>
+                </div>
+            </div>
+          -->
+        </div>
       </div>
-  
-      <div id="corporate-status">
-        <h2>CORPORATE STATUS</h2>
-  
-        <p>Rural People Development Initiative registered with Kajola Local 
-          Government in 1997. Ministry of Women Affairs and Social Development in 1998. 
-          In the year 2006 registered with Corporate Affairs Commission CAC Abuja.
-        </p>
-  
+
+
+      <div class="bg-white dark:bg-gray-800 lg:content-center lg:mx-8 lg:flex lg:max-w-5xl lg:shadow-lg lg:rounded-lg">
+      <!--
+        <div class="lg:w-1/2">
+            <div class="h-64 bg-cover lg:rounded-lg lg:h-full" style="background-image:url('https://images.unsplash.com/photo-1593642532400-2682810df593?ixlib=rb-1.2.1&ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80')"></div>
+        </div>
+      -->
+
+        <div class="max-w-xl px-6 py-12 lg:max-w-5xl lg:w-1/2" id="corporate-status">
+            <h2 class="text-2xl font-bold text-gray-800 dark:text-white md:text-3xl">Corporate Status</h2>
+            <p class="mt-4 text-gray-600 dark:text-gray-400">
+              Rural People Development Initiative registered with Kajola Local 
+              Government in 1997. Ministry of Women Affairs and Social Development in 1998. 
+              In the year 2006 registered with Corporate Affairs Commission CAC Abuja.
+            </p>
+        </div>
       </div>
-  
-      <div id="objectives">
-        <h2>OBJECTIVES</h2>
-        <ul>
-          <li>
-            To mobilize and encourage rural and semi-urban people especially women 
+
+      <div class="bg-white dark:bg-gray-800 lg:content-center lg:mx-8 lg:flex lg:max-w-5xl lg:shadow-lg lg:rounded-lg">
+      <!--
+        <div class="lg:w-1/2">
+            <div class="h-64 bg-cover lg:rounded-lg lg:h-full" style="background-image:url('https://images.unsplash.com/photo-1593642532400-2682810df593?ixlib=rb-1.2.1&ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80')"></div>
+        </div>
+      -->
+
+        <div class="max-w-xl px-6 py-12 lg:max-w-5xl lg:w-1/2" id="objectives">
+          <h2 class="text-2xl font-bold text-gray-800 dark:text-white md:text-3xl">Objectives</h2>
+          <ul>
+            <li class="mt-4 text-gray-600 dark:text-gray-400">
+              To mobilize and encourage rural and semi-urban people especially women 
             and youths imbibing the spirit of self help as a model of the community 
             development
-          </li>
-  
-          <li>
-            To support the development of all semi-scale rural based technology 
+            </li>
+            <li class="mt-4 text-gray-600 dark:text-gray-400">
+              To support the development of all semi-scale rural based technology 
             needful for sustenance of community based enterprices including 
             information and communication technology.
-          </li>
-  
-          <li>
-            To mobilize funds towards further wealth creation in the community.
-          </li>
-  
-          <li>
-            To initiate, promote and execute programs that will encourage and 
+            </li>
+            <li class="mt-4 text-gray-600 dark:text-gray-400">
+              To mobilize funds towards further wealth creation in the community.
+            </li>
+            <li class="mt-4 text-gray-600 dark:text-gray-400">
+              To initiate, promote and execute programs that will encourage and 
             enhance the culture, social and economic development in the community.
-          </li>
-  
-          <li>
-            To promote neat environment, good health and sound education in the 
+            </li>
+
+            <li class="mt-4 text-gray-600 dark:text-gray-400">
+              To promote neat environment, good health and sound education in the 
             community.
-          </li>
-  
-          <li>
-            To aid farmers, traders, and small-scale food processors in having 
+            </li>
+
+            <li class="mt-4 text-gray-600 dark:text-gray-400">
+              To aid farmers, traders, and small-scale food processors in having 
             opportunities to make bulk purchases.
-          </li>
-  
-          <li>
-            To offers training and business development services to micro and 
+            </li>
+            
+            <li class="mt-4 text-gray-600 dark:text-gray-400">
+              To offers training and business development services to micro and 
             small enterprices owners.
-          </li>
-  
-          <li>
-            To co-operate with other organizations with similar objectives.
-          </li>
-  
-          <li>
-            To undertake such other activities that may reasonably incidental to aims and objectives herein.
-          </li>
-  
-        </ul>
+            </li>
+            
+            <li class="mt-4 text-gray-600 dark:text-gray-400">
+              To co-operate with other organizations with similar objectives.
+            </li>
+            
+            <li class="mt-4 text-gray-600 dark:text-gray-400">
+              To undertake such other activities that may reasonably incidental to aims and objectives herein.
+            </li>
+          </ul>
+        </div>
       </div>
-  
-      <div id="target-group">
-        <h2>TARGET GROUPS</h2>
-  
-        <h4>Rural People Development Initiative (RUPEDIN) work and assist the bottom poor, such as;</h4>
-        <ul>
-          <li>Unorganized and conducted rural and semi-urban based people.</li>
-          <li>Existing women and youth cooperative organization.</li>
-          <li>Community development groups.</li>
-          <li>Community development assocations.</li>
-          <li>People living with HIV/AIDS.</li>
-        </ul>
+
+      <div class="bg-white dark:bg-gray-800 lg:content-center lg:mx-8 lg:flex lg:max-w-5xl lg:shadow-lg lg:rounded-lg">
+      <!--
+        <div class="lg:w-1/2">
+            <div class="h-64 bg-cover lg:rounded-lg lg:h-full" style="background-image:url('https://images.unsplash.com/photo-1593642532400-2682810df593?ixlib=rb-1.2.1&ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80')"></div>
+        </div>
+      -->
+
+        <div class="max-w-xl px-6 py-12 lg:max-w-5xl lg:w-1/2" id="target-groups">
+            <h2 class="text-2xl font-bold text-gray-800 dark:text-white md:text-3xl">Target Groups</h2>
+            <h3 class="text-2xl font-bold text-gray-800 dark:text-white md:text-lg">Rural People Development Initiative (RUPEDIN) work and assist the bottom poor, such as;</h3>
+            <li class="mt-4 text-gray-600 dark:text-gray-400">
+              Unorganized and conducted rural and semi-urban based people.
+            </li>
+            <li class="mt-4 text-gray-600 dark:text-gray-400">
+              Existing women and youth cooperative organization.
+            <li class="mt-4 text-gray-600 dark:text-gray-400">
+              Community development groups.
+            </li>
+            <li class="mt-4 text-gray-600 dark:text-gray-400">
+              Community development assocations.
+            </li>
+
+            <li class="mt-4 text-gray-600 dark:text-gray-400">
+              People living with HIV/AIDs
+            </li>
+        </div>
       </div>
+
+      <div class="bg-white dark:bg-gray-800 lg:content-center lg:mx-8 lg:flex lg:max-w-5xl lg:shadow-lg lg:rounded-lg">
+        <!--
+          <div class="lg:w-1/2">
+              <div class="h-64 bg-cover lg:rounded-lg lg:h-full" style="background-image:url('https://images.unsplash.com/photo-1593642532400-2682810df593?ixlib=rb-1.2.1&ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80')"></div>
+          </div>
+        -->
   
-      <div id="area-and-activity">
-        <h2>THE PROGRAMMES AREAS AND ACTIVITIES</h2>
+          <div class="max-w-xl px-6 py-12 lg:max-w-5xl lg:w-1/2" id="programmes-area-and-activity">
+              <h2 class="text-2xl font-bold text-gray-800 dark:text-white md:text-3xl">THE PROGRAMMES AREAS AND ACTIVITIES</h2>
+              <ol>
+                <li class="mt-4 text-gray-600 dark:text-gray-400">
+                  Savings and credit schemess. 
+                </li>
+                <ol>
+                  <li class="mt-4 text-gray-600 dark:text-gray-400">
+                    RUPEDIN weekly revolving micro loan.
+                  </li>
+                  <li class="mt-4 text-gray-600 dark:text-gray-400">
+                    RUPEDIN monthly revolving small loan.
+                  </li>
+                </ol>
+                <li class="mt-4 text-gray-600 dark:text-gray-400">
+                  Youth Empowerment Programmes
+                </li>
+                <li class="mt-4 text-gray-600 dark:text-gray-400">
+                  Health Education and HIV/AIDS
+                <li class="mt-4 text-gray-600 dark:text-gray-400">
+                  Information Communication and Technology.
+                </li>
+              </ol>
+          </div>
+        </div>
+
+
+      <div class="bg-white dark:bg-gray-800 lg:content-center lg:mx-8 lg:flex lg:max-w-5xl lg:shadow-lg lg:rounded-lg">
+        <!--
+          <div class="lg:w-1/2">
+              <div class="h-64 bg-cover lg:rounded-lg lg:h-full" style="background-image:url('https://images.unsplash.com/photo-1593642532400-2682810df593?ixlib=rb-1.2.1&ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80')"></div>
+          </div>
+        -->
   
-        <ol>
-          <li>Savings and credit Schemes.</li>
-          <ol>
-            <li>RUPEDIN weekly revolving micro loan.</li>
-            <li>RUPEDIN monthly revolving small loan</li>
-          </ol>
-  
-          <li>Youth Empowerment Programmes</li>
-          <li>Health Education and HIV and AIDS</li>
-          <li>Information Communication and Technology.</li>
-        </ol>
-      </div>
-  
-      <div id="level-of-activity">
-        <h2>LEVEL OF ORGANIZATION ACTIVTY</h2>
-  
-        <ul>
-          <li>Nation Wide</li>
-        </ul>
-      </div>
-  
-      <div id="achievement">
-        <h2>ACHIEVEMENTS</h2>
-  
-        <ol>
-          <li>Over 1,500 clients have benefitted in our micro and small revolving loan.</li>
-          <li>Sensitization on HIV prevention in the rural communities.</li>
-          <li>
-            Reduction of stigmatization and discrimination against the people living 
-            with HIV and AIDS through awareness and training of the community leaders 
-            motorcycle riders and market women.
-          </li>
-          <li>
-            Eighteen Youths graduated in computer operation and now employed into 
-            various computer institions.
-          </li>
-          <li>
-            Twenty-two young men aided with motor cycles of various type.
-          </li>
-  
-          <li>
-            RUPEDIN Networking with Civil-Societies in HIV and AIDS (CISHAN) Oyo State Chapter.
-          </li>
-  
-          <li>
-            Community Development Micro-Credit Round Tables (CDMR).
-          </li>
-        </ol>
-      </div>  
-    </main>
+          <div class="max-w-xl px-6 py-12 lg:max-w-5xl lg:w-1/2">
+              <h2 class="text-2xl font-bold text-gray-800 dark:text-white md:text-3xl" id="level-of-organization-activity">Level Of Organization Activity</h2>
+              <ul>
+                <li class="mt-4 text-gray-600 dark:text-gray-400">
+                  Nation Wide
+                </li>
+              </ul>
+          </div>
+        </div>
+
+        <div class="bg-white dark:bg-gray-800 lg:content-center lg:mx-8 lg:flex lg:max-w-5xl lg:shadow-lg lg:rounded-lg">
+          <!--
+            <div class="lg:w-1/2">
+                <div class="h-64 bg-cover lg:rounded-lg lg:h-full" style="background-image:url('https://images.unsplash.com/photo-1593642532400-2682810df593?ixlib=rb-1.2.1&ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80')"></div>
+            </div>
+          -->
     
-  </div>
+            <div class="max-w-xl px-6 py-12 lg:max-w-5xl lg:w-1/2">
+                <h2 class="text-2xl font-bold text-gray-800 dark:text-white md:text-3xl" id="achievement">Achievements</h2>
+                <ol>
+                  <li class="mt-4 text-gray-600 dark:text-gray-400">
+                    Over 1,500 clients have benefitted in our micro and small revolving loan. 
+                  </li>
+                  <li class="mt-4 text-gray-600 dark:text-gray-400">
+                    Sensitization on HIV prevention in the rural communities.
+                  </li>
+                  <li class="mt-4 text-gray-600 dark:text-gray-400">
+                    Reduction of stigmatization and discrimination against the people living 
+                    with HIV and AIDS through awareness and training of the community leaders 
+                    motorcycle riders and market women.
+                  <li class="mt-4 text-gray-600 dark:text-gray-400">
+                    Eighteen Youths graduated in computer operation and now employed into 
+            various computer institions.
+                  </li>
+                  <li class="mt-4 text-gray-600 dark:text-gray-400">
+                    Twenty-two young men aided with motor cycles of various type.
+                  </li>
+                  <li class="mt-4 text-gray-600 dark:text-gray-400">
+                    RUPEDIN Networking with Civil-Societies in HIV and AIDS (CISHAN) Oyo State Chapter.
+                  </li>
+                  <li class="mt-4 text-gray-600 dark:text-gray-400">
+                    Community Development Micro-Credit Round Tables (CDMR).dhfhdfhd
+                  </li>
+                </ol>
+            </div>
+          </div>
+        </div>
+    </section>
 
-  <footer>
-    <div id="contact-us">
-      <h2>Contact Us:</h2>
+  <footer class="bg-white dark:bg-gray-800" id="contact-us">
+    <hr class="h-px my-6 bg-gray-300 border-none dark:bg-gray-700">
+    <div class="container px-6 py-4 mx-auto">
+        <div class="lg:flex">
+            <div class="w-full -mx-6 lg:w-2/5">
+                <div class="px-6">
+                    <div>
+                        <a href="#" class="text-xl font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300">Rupedin</a>
+                    </div>
+                    
+                    <p class="max-w-md mt-2 text-gray-500 dark:text-gray-400">Rural People Development Initiative</p>
+                    
+                    <div class="flex mt-4 -mx-2">
+                        <a href="#" class="mx-2 text-gray-700 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400" aria-label="Linkden">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 512 512">
+                                <path d="M444.17,32H70.28C49.85,32,32,46.7,32,66.89V441.61C32,461.91,49.85,480,70.28,480H444.06C464.6,480,480,461.79,480,441.61V66.89C480.12,46.7,464.6,32,444.17,32ZM170.87,405.43H106.69V205.88h64.18ZM141,175.54h-.46c-20.54,0-33.84-15.29-33.84-34.43,0-19.49,13.65-34.42,34.65-34.42s33.85,14.82,34.31,34.42C175.65,160.25,162.35,175.54,141,175.54ZM405.43,405.43H341.25V296.32c0-26.14-9.34-44-32.56-44-17.74,0-28.24,12-32.91,23.69-1.75,4.2-2.22,9.92-2.22,15.76V405.43H209.38V205.88h64.18v27.77c9.34-13.3,23.93-32.44,57.88-32.44,42.13,0,74,27.77,74,87.64Z"/>
+                            </svg>
+                        </a>
 
-      <div id="contact-us-body">
-        <p>
-          Executive Director <br>
-          Rural People Development Initiative
-        </p>
+                        <a href="#" class="mx-2 text-gray-700 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400" aria-label="Facebook">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 512 512">
+                                <path d="M455.27,32H56.73A24.74,24.74,0,0,0,32,56.73V455.27A24.74,24.74,0,0,0,56.73,480H256V304H202.45V240H256V189c0-57.86,40.13-89.36,91.82-89.36,24.73,0,51.33,1.86,57.51,2.68v60.43H364.15c-28.12,0-33.48,13.3-33.48,32.9V240h67l-8.75,64H330.67V480h124.6A24.74,24.74,0,0,0,480,455.27V56.73A24.74,24.74,0,0,0,455.27,32Z"/>
+                            </svg>
+                        </a>
 
-        <div id="address">
-          <p>
-            Oke-Obeere Isemi-ile <br>P.O Box 383, <br>Okeho, Kajola L.G.A. Oyo State, Nigeria.
-          </p>
+                        <a href="#" class="mx-2 text-gray-700 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400" aria-label="Twitter">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 512 512">
+                                <path d="M496,109.5a201.8,201.8,0,0,1-56.55,15.3,97.51,97.51,0,0,0,43.33-53.6,197.74,197.74,0,0,1-62.56,23.5A99.14,99.14,0,0,0,348.31,64c-54.42,0-98.46,43.4-98.46,96.9a93.21,93.21,0,0,0,2.54,22.1,280.7,280.7,0,0,1-203-101.3A95.69,95.69,0,0,0,36,130.4C36,164,53.53,193.7,80,211.1A97.5,97.5,0,0,1,35.22,199v1.2c0,47,34,86.1,79,95a100.76,100.76,0,0,1-25.94,3.4,94.38,94.38,0,0,1-18.51-1.8c12.51,38.5,48.92,66.5,92.05,67.3A199.59,199.59,0,0,1,39.5,405.6,203,203,0,0,1,16,404.2,278.68,278.68,0,0,0,166.74,448c181.36,0,280.44-147.7,280.44-275.8,0-4.2-.11-8.4-.31-12.5A198.48,198.48,0,0,0,496,109.5Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-6 lg:mt-0 lg:flex-1">
+                <div class="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4">
+                    <div>
+                        <h3 class="text-gray-700 uppercase dark:text-white">Head</h3>
+                        <a href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Executive Directive</a>
+                    </div>
+
+                    <div>
+                        <h3 class="text-gray-700 uppercase dark:text-white">Address</h3>
+                        <span href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Oke-Obeere Isemi-Ile</span>
+                        <span href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">P.O Box 383</span>
+                        <span href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Kajola L.G.A.</span>
+                        <span href="#" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Oyo State, Nigeria</span>
+                    </div>
+
+                    <div>
+                        <h3 class="text-gray-700 uppercase dark:text-white">Contact</h3>
+                        <span class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">07039894429</span>
+                        <span class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">08026682612</span>
+                        <span class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Rusel_77@yahoo.com</span>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div id="contact">
-          <p>Telephone: <a href="tel:07039894429">07039894429</a>, <a href="tel:08026682614">08026682614</a></p>
-          <p>Email: <a href="mailto:resel_77@yahoo.com">Rusel_77@yahoo.com</a></p>
+        <hr class="h-px my-6 bg-gray-300 border-none dark:bg-gray-700">
+
+        <div>
+            <p class="text-center text-gray-800 dark:text-white">© Rupedin 2022 - All rights reserved</p>
         </div>
-
-        <div id="social-media">
-          <h2>Socials</h2>
-          <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
-          <a href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
-          <a href="https://instagram.com/_rupedin" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-          <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
-
-        </div>
-
-      </div>
     </div>
   </footer>
 
   </div>
+
+  <script>
+
+    let bttn = document.querySelector("#arm-burger");
+    bttn.addEventListener("click", () => {
+      let menu = document.querySelector("#menu");
+      let menu_display = getComputedStyle(menu).display;
+      if (menu_display === "block"){
+        menu.style.display = "none";
+        menu.style.animationDuration = "3s";
+      } else {
+        menu.style.display = "block";
+      }
+    })
+
+  </script>
 </body>
 </html>
